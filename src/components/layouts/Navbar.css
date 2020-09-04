@@ -1,0 +1,17 @@
+.main-navbar {
+  background-color: #f3d54d !important;
+}
+
+.navbar-header {
+  float: left;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+}
+
+.navbar-brand {
+  float: none;
+  color: #1f1d19 !important;
+  font-size: 30px;
+  font-weight: bold;
+}
