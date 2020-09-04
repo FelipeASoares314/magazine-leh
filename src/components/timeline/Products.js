@@ -6,7 +6,7 @@ import productsService from '../../service/Products'
 
 import Loader from '../basic/Loader'
 import Swiper from '../basic/Swiper'
-import ProductCard from './products/cards/ProductCard'
+import ProductCard from '../cards/ProductCard'
 
 export default class Products extends Component {
   constructor(props) {

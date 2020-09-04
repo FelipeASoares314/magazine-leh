@@ -5,6 +5,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
 import 'swiper/swiper.scss';
+import './Swiper.css'
 
 export default function SwiperWraper (props) {
   const spaceBetween = props.spaceBetween || 10
@@ -15,11 +16,19 @@ export default function SwiperWraper (props) {
     : ''
 
   return (
-    <Swiper
-      spaceBetween={spaceBetween}
-      slidesPerView={slidesPerView}
-    >
-      {slides}
-    </Swiper>
+    <div>
+      <div className="row">
+        <div className="col text-muted swiper-wrapper-span">
+          Some label
+        </div>
+      </div>
+
+      <Swiper
+        spaceBetween={spaceBetween}
+        slidesPerView={slidesPerView}
+      >
+        {slides}
+      </Swiper>
+    </div>
   );
 };
