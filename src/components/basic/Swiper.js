@@ -17,7 +17,7 @@ export default function SwiperWraper (props) {
 
   return (
     <div className="row">
-      <div className="col-12 text-muted">
+      <div className="col-12 text-muted mb-1 swiper-label">
         {props.label}
       </div>
 
