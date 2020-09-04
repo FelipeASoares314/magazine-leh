@@ -4,6 +4,7 @@ const products = [
     name: 'iPhone 11 64GB Preto iOS 4G Câmera 12MP - Apple',
     brand: 'Apple',
     price: 4399,
+    rating: 3,
     installments: {
       number: 12,
       interests: false
@@ -14,6 +15,7 @@ const products = [
     name: 'Smartphone Moto G8 Power Lite 64GB Dual Chip Android Tela 6.5” Helio P35 4G Câmera 16MP+ 2MP+ 2MP - Azul Navy',
     brand: 'Motorola',
     price: 1208.07,
+    rating: 4,
     installments: null
   },
   {
@@ -21,6 +23,7 @@ const products = [
     name: 'Smart Tv Led 43\'\' Samsung 43T5300 Full HD + WIFI, HDR para Brilho e Contraste, Plataforma Tizen, 2 HDMI, 1 USB - Preta',
     brand: 'Samsung',
     price: 1849.99,
+    rating: 5,
     installments: null
   }
 ]
