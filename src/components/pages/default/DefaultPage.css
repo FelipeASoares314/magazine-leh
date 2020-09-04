@@ -1,4 +1,5 @@
 .default-page {
-  padding: calc(50px);
+  padding-top: calc(50px);
+  padding-bottom: calc(50px);
   background-color: #fcfaf3;
 }

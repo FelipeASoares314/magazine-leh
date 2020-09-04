@@ -2,7 +2,7 @@ import React from 'react';
 import './Home.css';
 
 import Navbar from '../components/layouts/Navbar'
-import Products from '../components/timeline/Products'
+import Products from '../components/timeline/products/Products'
 import DefaultPage from '../components/pages/default/DefaultPage'
 
 export default function Home () {

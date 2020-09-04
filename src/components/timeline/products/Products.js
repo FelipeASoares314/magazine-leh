@@ -2,11 +2,11 @@ import React, { Component } from 'react';
 
 import './Products.css'
 
-import productsService from '../../service/Products'
+import productsService from '../../../service/Products'
 
-import Loader from '../basic/Loader'
-import Swiper from '../basic/Swiper'
-import ProductCard from '../cards/ProductCard'
+import Loader from '../../basic/Loader'
+import Swiper from '../../basic/Swiper'
+import ProductCard from '../../cards/ProductCard'
 
 export default class Products extends Component {
   constructor(props) {
@@ -32,7 +32,7 @@ export default class Products extends Component {
       .map((product, index) => <ProductCard key={index} {...product} />)
 
     return (
-      <Swiper>
+      <Swiper label="Alguns produtos">
         {products}
       </Swiper>
     )

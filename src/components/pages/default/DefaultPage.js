@@ -4,6 +4,10 @@ import './DefaultPage.css'
 
 export default function DefaultPage (props) {
   return (
-    <div className="default-page">{props.children}</div>
+    <div className="default-page">
+      <div className="container">
+        {props.children}
+      </div>
+    </div>
   )
 }
