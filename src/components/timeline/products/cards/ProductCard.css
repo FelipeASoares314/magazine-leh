@@ -1,4 +1,14 @@
 .product-card {
   width: 18rem;
+  height: 50vh;
   text-align: left;
+}
+
+.product-card-name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  /* number of lines to show */
+  -webkit-box-orient: vertical;
 }
