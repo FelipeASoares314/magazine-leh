@@ -1,0 +1,12 @@
+.rounded-button {
+  padding: .5em .8em;
+  border: 1px solid white;
+  border-radius: 999px;
+  transition-property: font-size;
+  transition-duration: 1s;
+}
+
+.rounded-button:hover {
+  cursor: pointer;
+  font-size: 1.2em;
+}
