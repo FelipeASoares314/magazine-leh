@@ -1,6 +1,7 @@
 import React from 'react';
 
-import Home from '../views/Home';
+import Home from '../views/home/Home';
+import ProductView from '../views/product/View';
 
 import {
   BrowserRouter as Router,
@@ -11,12 +12,22 @@ import {
 const routes = [{
   path: '/',
   name: 'Home',
+  exact: true,
   component: Home
+}, {
+  path: '/products/:id',
+  name: 'ProductsView',
+  component: ProductView
 }]
 
 export default function Routes () {
   const renderedRoutes = routes
-    .map(route => <Route key={route.name} path={route.path}>{route.component}</Route>)
+    .map((route, index) =>
+      <Route
+        key={index}
+        {...route}
+      />
+    )
 
   return (
     <Router>

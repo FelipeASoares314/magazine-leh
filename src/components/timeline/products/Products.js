@@ -33,13 +33,13 @@ export default class Products extends Component {
         const products = section.products
           .map((product, index) => <ProductCard key={index} {...product} />)
 
-        const margin = index > 0
+        const marginTop = index > 0
           ? <div className="mt-4" />
           : null
 
         return (
           <div key={section.label}>
-            {margin}
+            {marginTop}
             <Swiper label={section.label} >
               {products}
             </Swiper>
