@@ -13,9 +13,9 @@ export default function Navbar () {
   return (
     <BootstrapNavbar className="main-navbar">
       <div className="container">
-        <a className="navbar-brand" href="/">Magazine da Leh</a>
+        <a className="mr-auto navbar-brand" href="/">Magazine da Leh</a>
 
-        <div className="mr-auto align-self-center">
+        <div className="align-self-center mr-2">
           <SearchInput />
         </div>
 

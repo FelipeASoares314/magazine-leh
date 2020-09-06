@@ -1,3 +1,29 @@
 .swiper-label {
   font-size: 23px;
 }
+
+.control-button {
+  border: none;
+  border-radius: 50%;
+  background: inherit;
+  transition: background 1s;
+}
+
+.control-button:hover {
+  background: #999;
+}
+
+.ripple {
+  background-position: center;
+  transition: background 0.8s;
+}
+
+.ripple:hover {
+  background: inherit radial-gradient(circle, transparent 1%, inherit 1%) center/15000%;
+}
+
+.ripple:active {
+  background-color: inherit;
+  background-size: 100%;
+  transition: background 0s;
+}

@@ -28,14 +28,24 @@ export default class Products extends Component {
   renderProducts () {
     if (!this.state.loaded) return ''
 
-    const products = this.state.products
-      .map((product, index) => <ProductCard key={index} {...product} />)
+    return this.state.products
+      .map((section, index) => {
+        const products = section.products
+          .map(product => <ProductCard {...product} />)
 
-    return (
-      <Swiper label="Alguns produtos">
-        {products}
-      </Swiper>
-    )
+        const margin = index > 0
+          ? <div className="mt-4" />
+          : null
+
+        return (
+          <div>
+            {margin}
+            <Swiper label={section.label} >
+              {products}
+            </Swiper>
+          </div>
+        )
+      })
   }
 
   render () {

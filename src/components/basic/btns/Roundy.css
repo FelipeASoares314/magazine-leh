@@ -1,7 +1,7 @@
 .rounded-button {
   padding: .5em .8em;
-  border: 1px solid white;
-  border-radius: 999px;
+  border: 1px solid #1f1d19;
+  border-radius: 50%;
   transition-property: font-size;
   transition-duration: 1s;
 }
