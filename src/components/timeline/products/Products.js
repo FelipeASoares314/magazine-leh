@@ -31,14 +31,14 @@ export default class Products extends Component {
     return this.state.products
       .map((section, index) => {
         const products = section.products
-          .map(product => <ProductCard {...product} />)
+          .map((product, index) => <ProductCard key={index} {...product} />)
 
         const margin = index > 0
           ? <div className="mt-4" />
           : null
 
         return (
-          <div>
+          <div key={section.label}>
             {margin}
             <Swiper label={section.label} >
               {products}

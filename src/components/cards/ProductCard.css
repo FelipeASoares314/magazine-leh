@@ -11,3 +11,7 @@
   /* number of lines to show */
   -webkit-box-orient: vertical;
 }
+
+.product-link {
+  text-decoration: none !important;
+}
